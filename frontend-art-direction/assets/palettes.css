@@ -1,0 +1,58 @@
+/* Optional starting palettes, not brand tokens or a complete component system.
+   Apply a data-art-direction value to the root of a page or a scoped preview.
+   Surfaces and muted text are suggestions; adapt them to the actual content.
+   expressive-discovery also suggests browser-native control colors. */
+
+:root,
+[data-art-direction="quiet-editorial"] {
+  --art-page: #faf8f3;
+  --art-surface: #fffefa;
+  --art-ink: #23343b;
+  --art-muted: #596c70;
+  --art-accent: #225e4c;
+  --art-tint: #edf4ee;
+  --art-line: #dce2d9;
+  --art-display: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  --art-body: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+[data-art-direction="clear-product"] {
+  --art-page: #ffffff;
+  --art-surface: #f5f7fa;
+  --art-ink: #171a20;
+  --art-muted: #586270;
+  --art-accent: #2458d3;
+  --art-tint: #edf2ff;
+  --art-line: #e0e5ee;
+  --art-display: "Noto Sans CJK SC", "PingFang SC", system-ui, sans-serif;
+  --art-body: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+[data-art-direction="technical-precision"] {
+  --art-page: #f4f6f8;
+  --art-surface: #ffffff;
+  --art-ink: #17212b;
+  --art-muted: #536473;
+  --art-accent: #25655f;
+  --art-tint: #e8f2ef;
+  --art-line: #d9e1e8;
+  --art-display: "Noto Sans CJK SC", "PingFang SC", system-ui, sans-serif;
+  --art-body: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+[data-art-direction="expressive-discovery"] {
+  color-scheme: dark;
+  --art-page: #101826;
+  --art-surface: #192439;
+  --art-ink: #f0f3fb;
+  --art-muted: #b3bfd2;
+  --art-accent: #b7c9ff;
+  --art-tint: #253655;
+  --art-line: #35435a;
+  --art-display: "Noto Sans CJK SC", "PingFang SC", system-ui, sans-serif;
+  --art-body: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+/* These declarations only provide vocabulary. They intentionally do not change
+   body styles, font sizes, spacing, components, or the project's existing UI.
+   Font names are fallbacks, not bundled font downloads. */
